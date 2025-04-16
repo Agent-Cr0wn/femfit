@@ -1,0 +1,63 @@
+.nutrition-tips-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .tip-box {
+    background-color: rgba(125, 25, 53, 0.05);
+    padding: 1.25rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--wine-red);
+  }
+  
+  .tip-box h4 {
+    color: var(--wine-red);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+  
+  .tip-box p {
+    color: var(--dark-grey);
+    line-height: 1.6;
+  }
+  
+  .water-tracker {
+    background-color: white;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .tracker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+  
+  .tracker-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--dark-grey);
+  }
+  
+  .tracker-header span {
+    font-weight: 500;
+    color: var(--medium-grey);
+  }
+  
+  .water-progress-bar {
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .water-progress {
+    height: 100%;
+    background-color: #4FB3F6;
+    border-radius: 6px;
+    transition: width 0.3s ease;
+  }
+  

@@ -1,0 +1,334 @@
+.subscription-page {
+    background-color: var(--light-grey);
+  }
+  
+  .subscription-container {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+  }
+  
+  .subscription-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .subscription-header h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--dark-grey);
+  }
+  
+  .subscription-header p {
+    color: var(--medium-grey);
+    font-size: 1.1rem;
+  }
+  
+  .subscription-error {
+    background-color: rgba(255, 107, 107, 0.1);
+    border-left: 4px solid var(--error-color);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: #d32f2f;
+  }
+  
+  .subscription-plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .plan-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    border: 2px solid transparent;
+  }
+  
+  .plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plan-card.selected {
+    border-color: var(--wine-red);
+  }
+  
+  .plan-card.selected::after {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--wine-red);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .plan-header {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .plan-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-grey);
+  }
+  
+  .plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--wine-red);
+  }
+  
+  .duration {
+    font-size: 1rem;
+    color: var(--medium-grey);
+    margin-left: 0.25rem;
+  }
+  
+  .plan-features {
+    padding: 2rem;
+  }
+  
+  .plan-features ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .plan-features li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .plan-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--wine-red);
+    font-weight: bold;
+  }
+  
+  .plan-footer {
+    padding: 0 2rem 2rem;
+    text-align: center;
+  }
+  
+  .btn-select {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: white;
+    border: 2px solid var(--wine-red);
+    color: var(--wine-red);
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .btn-select:hover {
+    background-color: rgba(125, 25, 53, 0.05);
+  }
+  
+  .btn-select.selected {
+    background-color: var(--wine-red);
+    color: white;
+  }
+  
+  .payment-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .payment-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-grey);
+  }
+  
+  .payment-methods {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .payment-method {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s;
+  }
+  
+  .payment-method:hover {
+    border-color: #ccc;
+  }
+  
+  .payment-method.active {
+    border-color: var(--wine-red);
+    background-color: rgba(125, 25, 53, 0.05);
+  }
+  
+  .payment-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+  .card-details {
+    margin-bottom: 2rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  .paypal-info {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .paypal-info p {
+    color: var(--medium-grey);
+  }
+  
+  .order-summary {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .order-summary h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--dark-grey);
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .summary-item.total {
+    border-bottom: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    color: var(--dark-grey);
+  }
+  
+  .terms-agreement {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .terms-agreement input {
+    margin-top: 0.25rem;
+  }
+  
+  .btn-subscribe {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .subscription-footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .subscription-footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-grey);
+  }
+  
+  .subscription-footer p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--medium-grey);
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 992px) {
+    .form-row {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .subscription-container {
+      padding: 2rem 1rem;
+    }
+    
+    .subscription-header h1 {
+      font-size: 1.75rem;
+    }
+    
+    .payment-methods {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .plan-header {
+      padding: 1.5rem;
+    }
+    
+    .plan-features, .plan-footer {
+      padding: 1.5rem;
+    }
+    
+    .price {
+      font-size: 2rem;
+    }
+  }

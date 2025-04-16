@@ -1,0 +1,94 @@
+:root {
+  --dark-grey: #2A2A2A;
+  --wine-red: #7D1935;
+  --light-grey: #F5F5F5;
+  --medium-grey: #555555;
+  --hover-red: #a0223f;
+  --text-light: #FFFFFF;
+  --text-dark: #222222;
+  --error-color: #FF6B6B;
+  --success-color: #4CAF50;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', 'Arial', sans-serif;
+  background-color: var(--light-grey);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--wine-red);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-red);
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--wine-red);
+  color: var(--text-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-red);
+}
+
+.btn-secondary {
+  background-color: var(--medium-grey);
+  color: var(--text-light);
+}
+
+.btn-secondary:hover {
+  background-color: #666666;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.error {
+  color: var(--error-color);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.success {
+  color: var(--success-color);
+}
